@@ -1,4 +1,99 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #dadada;
-  font-size: 10px;
+background-color: #d8d8d8;
+font-family: sans-serif;
+font-size: 16px;
+width: 100%;
+display: block;
+margin: 20px;
+}
+
+.container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin: 10px auto;
+  width: 90%;
+}
+
+div {
+  float: left;
+  margin: 0px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.preview h1 {
+  font-size: 1.3em;
+  font-family: serif;
+  text-transform: capitalize;
+  text-align: left;
+  margin: 0 auto 25px 0;
+  padding-left: 20px;
+  padding-top: 20px;
+  background-size: cover;
+}
+
+h1 {
+  font-family: sans-serif;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+
+/* Modern Luxury Travel text*/
+
+.emphasis {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 30;
+    margin: 0 auto;
+}
+
+.preview {
+    margin: auto;
+    margin-bottom: 10px;
+    height: 200px;
+    width: 80%;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+}
+
+.preview.baku {
+    background-image: url("../images/baku.jpg");
+}
+
+.preview.london {
+    background-image: url("../images/london.png");
+}
+
+.preview.madrid {
+    background-image: url("../images/madrid.jpg");
+}
+
+.preview.rome {
+    background-image: url("../images/rome.jpg");
+}
+
+
+/* On screens that are 576px or more, two columns */
+@media screen and (min-width: 575px) {
+  .preview {
+    margin: 1%;
+    width: 48%;
+  }
+}
+
+
+/* On screens that are 991px or more, four columns */
+@media screen and (min-width: 900px) {
+  .preview {
+    margin: 1%;
+    width: 23%;
+  }
 }
