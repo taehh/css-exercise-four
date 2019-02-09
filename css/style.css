@@ -14,11 +14,12 @@ margin: 20px;
 .container {
   padding-top: 25px;
   padding-bottom: 25px;
+  padding-right: 40px;
   margin: 10px auto;
   width: 90%;
 }
 
-div {
+div{
   float: left;
   margin: 0px;
   width: 100%;
